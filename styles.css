@@ -1,0 +1,59 @@
+body {
+    /* Flexbox para centrar la calculadora verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ccc; /* Color de fondo gris claro */
+}
+
+.calculator {
+    /* Estilos del contenedor de la calculadora */
+    width: 300px;
+    background-color: #666; /* Color de fondo gris oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.display {
+    /* Estilos del display */
+    grid-column: span 4; /* Ocupa las cuatro columnas */
+    background-color: #ddd; /* Color de fondo gris claro */
+    color: #333; /* Color del texto */
+    font-size: 1.5em; /* Tamaño de fuente grande */
+    text-align: right; /* Alineación del texto a la derecha */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra interna */
+}
+
+.button {
+    /* Estilos de los botones numéricos y operadores */
+    background-color: #fff; /* Color de fondo blanco */
+    color: #333; /* Color del texto */
+    font-size: 1.2em; /* Tamaño de fuente mediano */
+    padding: 15px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+}
+
+.orange {
+    /* Estilos de los botones naranjas */
+    background-color: orange; /* Color de fondo naranja */
+}
+
+.red {
+    /* Estilos del botón rojo (=) */
+    background-color: #ff6347; /* Color de fondo rojo */
+}
+
+.equal {
+    /* Estilos del botón de igual (=), ocupa dos columnas */
+    grid-column: span 2;
+}

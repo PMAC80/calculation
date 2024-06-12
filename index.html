@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal de la calculadora -->
+    <div class="calculator">
+        <!-- Display de la calculadora -->
+        <div class="display" id="display">0</div>
+        <!-- Botón de limpiar (Clear) -->
+        <button class="button" onclick="clearDisplay()">C</button>
+        <!-- Botones numéricos del 7 al 9 -->
+        <button class="button" onclick="appendNumber('7')">7</button>
+        <button class="button" onclick="appendNumber('8')">8</button>
+        <button class="button" onclick="appendNumber('9')">9</button>
+        <!-- Botón de suma (+) -->
+        <button class="button orange" onclick="appendOperator('+')">+</button>
+        <!-- Botones numéricos del 4 al 6 -->
+        <button class="button" onclick="appendNumber('4')">4</button>
+        <button class="button" onclick="appendNumber('5')">5</button>
+        <button class="button" onclick="appendNumber('6')">6</button>
+        <!-- Botón de resta (-) -->
+        <button class="button orange" onclick="appendOperator('-')">-</button>
+        <!-- Botones numéricos del 1 al 3 -->
+        <button class="button" onclick="appendNumber('1')">1</button>
+        <button class="button" onclick="appendNumber('2')">2</button>
+        <button class="button" onclick="appendNumber('3')">3</button>
+        <!-- Botón de multiplicación (*) -->
+        <button class="button orange" onclick="appendOperator('*')">*</button>
+        <!-- Botón numérico 0 -->
+        <button class="button" onclick="appendNumber('0')">0</button>
+        <!-- Botón de punto decimal (.) -->
+        <button class="button" onclick="appendDecimal('.')">.</button>
+        <!-- Botón de división (/) -->
+        <button class="button orange" onclick="appendOperator('/')">/</button>
+        <!-- Botón de igual (=) -->
+        <button class="button equal red" onclick="calculate()">=</button>
+    </div>
+    <!-- Enlace al archivo de script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
